@@ -65,8 +65,10 @@
                 const data = await response.json();
                 
                 if (data.error) {
-                    alert('Gagal: ' + data.error);
-                } else {
+    // Tukar objek kepada teks supaya boleh dibaca
+    let mesejRalat = typeof data.error === 'object' ? JSON.stringify(data.error) : data.error;
+    alert('Gagal: ' + mesejRalat);
+                  } else {
                     tokenCount++;
                     renderTokenCard(data, tokenCount);
                 }

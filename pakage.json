@@ -1,0 +1,8 @@
+{
+  "name": "netflix-token-website",
+  "version": "1.0.0",
+  "description": "Website generator token Netflix",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
